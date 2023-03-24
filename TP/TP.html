@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Centro cultural quilombo urbano</title>
     </head>        
-    <body bgcolor="orange">
+    <body bgcolor="white">
         <h1 align="center"><b>Cadastramento de atividades do Centro Cultural Quilombo Urbano</b></h1>
         <p>Projeto afro-centrado, sedeado no Centro Comunitário do Bairro São Dimas, localizado nas dependências da Universidade Federal de São João del-Rei, gestado pelo Movimento Negro de São João del-Rei, convida aos artistas locais, organizações sociais, projetos educativos, projetos de extensão, à participarem do aquilombamento de atividades em prol da utilização contínua do espaço. O objetivo do projeto é proporcionar aos moradores da comunidade supra mencionada, de todas as faixas etárias, uma série de ações/oficinas, que visam o bem estar e a acessibilidade ao lazer, arte, cultura e educação, afim de efetivar a Lei 10.639/2003.</p>
         <h2><b>ESTRUTURA DO ESPAÇO</b></h2>
@@ -42,27 +42,28 @@
         <p>Todos os projetos devem ser alinhados com a proposta de troca de saberes, de promover o acolhimento, pertencimento e inclusão. Os oficineiros regulares, ficam comprometidos ajudarem a manter o local limpo e organizado, bem como participarem da reunião mensal para abordamos sobre os balanços das atividades, as futuras intenções e estudo do letramento racial. </p>
         <br/>
 
-<p align="center"><b>COLOCAR EM UM CONTAINER O CONTEUDO ABAIXO:</b></p>
-
+    <fieldset>
+        <legend><b>Formulário de projeto</b></legend>
+        <form>
         <ol>
             <li>Nome do projeto e/ou oficina:</li>
             <p align="left">Se for membro do Mov. Negro coloque entre parentêses.</p>
             <p align="left">Ex: Roda de Oralidade (MNSJ)</p>
             <form>
                 <label for="pname"></label><br>
-                <input type="text" id="pname" name="pname" style="width: 400px;"><br>
+                <input type="text" id="pname" name="pname" required style="width: 400px;"><br>
             </form>
             <br/>
             <li>Nome d(o)(a)(e) responsável:</li>
             <form>
                 <label for="rname"></label><br>
-                <input type="text" id="rname" name="rname" style="width: 400px;"><br>
+                <input type="text" id="rname" name="rname" required style="width: 400px;"><br>
             </form>
             <br/>
             <li>Email de contato:</li>
             <form>
                 <label for="email"></label><br>
-                <input type="text" id="email" name="email" style="width: 400px;"><br>
+                <input type="text" id="email" name="email" required style="width: 400px;"><br>
             </form>
             <br/>
             <li>Telefone:</li>
@@ -72,50 +73,50 @@
             </form>
             <br/>
             <li>Faça uma pequena apresentação sobre o projeto:</li>
-            <textarea cols="60" rows="15"></textarea>
+            <textarea cols="60" rows="20"></textarea>
             <br/>
             <li>Seu projeto é:</li>
             <p>
-                Independente: <input type="checkbox" name="tipo" value="indep" /><br />
-                De extensão: <input type="checkbox" name="tipo" value="ext" /><br />
-                Voluntário: <input type="checkbox" name="tipo" value="volun" /><br />
-                Financiado: <input type="checkbox" name="tipo" value="finan" />
+                Independente: <input type="checkbox" name="texto" . /><br />
+                De extensão: <input type="checkbox" name="texto" . /><br />
+                Voluntário: <input type="checkbox" name="texto" . /><br />
+                Financiado: <input type="checkbox" name="texto" . />
             </p>
             <br/>
             <li>Quantas pessoas fazem parte do seu projeto?</li>
             <p>
-                1: <input type="checkbox" name="numero" value="num1" /><br />
-                2: <input type="checkbox" name="numero" value="num2" /><br />
-                3: <input type="checkbox" name="numero" value="num3" /><br />
-                4 ou mais: <input type="checkbox" name="numero" value="num4" />
+                1: <input type="checkbox" name="numero" . /><br />
+                2: <input type="checkbox" name="numero" . /><br />
+                3: <input type="checkbox" name="numero" . /><br />
+                4 ou mais: <input type="checkbox" name="numero" . />
             </p>
             <br/>
             <li>A constância da proposta de atuação é:</li>
             <p>
-                Duas vezes na semana: <input type="checkbox" name="prop" value="indep" /><br />
-                Uma vez na semana: <input type="checkbox" name="prop" value="ext" /><br />
-                De 15 em 15 dias: <input type="checkbox" name="prop" value="volun" /><br />
-                Uma vez por mês: <input type="checkbox" name="prop" value="finan" />
+                Duas vezes na semana: <input type="checkbox" name="texto" . /><br />
+                Uma vez na semana: <input type="checkbox" name="texto" . /><br />
+                De 15 em 15 dias: <input type="checkbox" name="texto" . /><br />
+                Uma vez por mês: <input type="checkbox" name="texto" . />
                 <br/>
-                Pontual (uma atividade - não exclui a possibilidade de cadastrar em outra oportunidade): <input type="checkbox" name="prop" value="finan" />
+                Pontual (uma atividade - não exclui a possibilidade de cadastrar em outra oportunidade): <input type="checkbox" name="texto" value="cons5" />
                 <br/>
-                Outra (Digite abaixo qual o tipo de constância): <input type="checkbox" name="prop" value="finan" />
+                Outra (Digite abaixo qual o tipo de constância): <input type="checkbox" name="texto" value="cons6" />
                 <br/>
-                <textarea cols="15" rows="7"></textarea>
+                <textarea cols="70" rows="10"></textarea>
             </p>
             <br/>
             <li>O público alvo do projeto é:</li>
             <p>
-            Crianças: <input type="checkbox" name="prop" value="indep" /><br />
-            Adolescentes: <input type="checkbox" name="prop" value="ext" /><br />
-            Mulheres: <input type="checkbox" name="prop" value="volun" /><br />
-            Terceira idade: <input type="checkbox" name="prop" value="finan" />
+            Crianças: <input type="checkbox" name="texto" /><br />
+            Adolescentes: <input type="checkbox" name="texto" /><br />
+            Mulheres: <input type="checkbox" name="texto" /><br />
+            Terceira idade: <input type="checkbox" name="texto" />
                 <br/>
-            Todos: <input type="checkbox" name="prop" value="finan" />
+            Todos: <input type="checkbox" name="texto" value="todos" />
                 <br/>
-            Outra (Digite abaixo qual o tipo de público): <input type="checkbox" name="prop" value="finan" />
+            Outra (Digite abaixo qual o tipo de público): <input type="checkbox" name="texto" . />
             <br/>
-            <textarea cols="15" rows="7"></textarea>
+            <textarea cols="70" rows="10"></textarea>
         </p>
             <br/>
             <li>Qual(ais) dia(s) e horário você tem disponível para realizar sua atividade. E qual é o tempo estimado de duração? - Se possível, coloque duas possiblidades de horário (em ordem de prioridade).</li>
@@ -127,17 +128,37 @@
             </ol>
             <form>
                 <label for="email"></label><br>
-                <input type="text" id="email" name="email" style="width: 400px;"><br>
+                <textarea cols="70" rows="10" required></textarea>
+                <br>
             </form>
             <br/>
             <li>Seu projeto consegue providenciar seus próprios materiais (além dos já dispostos acima), ou precisa de algum outro item? Quais equipamentos/ferramentas/utensílios você sugere para o espaço?</li>
             <p align="left"><i>O Movimento Negro de São João del Rei fica comprometido de conseguir aos poucos materiais para o espaço.</i></p>
             <form>
                 <label for="email"></label><br>
-                <input type="text" id="email" name="email" style="width: 400px;"><br>
+                <input type="text" id="texto" name="texto" required style="width: 400px;"><br>
             </form>
             <br/>
+            <form action="https://formspree.io/f/xnqybgjy" method="post">
+                <button type="submit">Enviar</button>
+            </form>
         </ol>
-        <p align="center"><b>FIM DO CONTAINER</b></p>
+    </form>
+    </fieldset>
+    <br/>
+    <fieldset>
+        <legend><b>Formulário do professor/palestrante</b></legend>
+        <ol>
+            <li>Nome completo:</li>
+            <form>
+            <input type="text" id="nome" name="nome" required style="width: 400px;">
+            <br/>
+        </form>
+            <li>Data de nascimento:</li>
+            <form>
+                
+            </form>
+        </ol>
+    </fieldset>
     </body>
 </html>
