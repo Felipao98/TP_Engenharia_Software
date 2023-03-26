@@ -7,6 +7,12 @@
             input[type="text"]:focus{
                 padding: 0 20px;
                 border: 2px #FC3 solid;
+                background-color: orange;
+            }
+            input[type="number"]:focus{
+                padding: 0 20px;
+                border: 2px #FC3 solid;
+                background-color: orange;
             }
             input[type="text"]{
                 width: 400px;
@@ -27,8 +33,11 @@
         </style>
     </head>        
     <body bgcolor="orange">
+        <fieldset align="center">
         <h1 align="center"><b>Cadastramento de atividades do Centro Cultural Quilombo Urbano</b></h1>
         <p>Projeto afro-centrado, sedeado no Centro Comunitário do Bairro São Dimas, localizado nas dependências da Universidade Federal de São João del-Rei, gestado pelo Movimento Negro de São João del-Rei, convida aos artistas locais, organizações sociais, projetos educativos, projetos de extensão, à participarem do aquilombamento de atividades em prol da utilização contínua do espaço. O objetivo do projeto é proporcionar aos moradores da comunidade supra mencionada, de todas as faixas etárias, uma série de ações/oficinas, que visam o bem estar e a acessibilidade ao lazer, arte, cultura e educação, afim de efetivar a Lei 10.639/2003.</p>
+    </fieldset>
+    <br/>
         <h2><b>ESTRUTURA DO ESPAÇO</b></h2>
         <ol>
             <li><b>Área coberta:</b></li>
@@ -65,6 +74,7 @@
         <br/>
 
     <fieldset>
+    <form>
         <legend><b>Formulário de projeto</b></legend>
         <form>
         <ol>
@@ -156,15 +166,14 @@
             <br/>
             <li>Seu projeto consegue providenciar seus próprios materiais (além dos já dispostos acima), ou precisa de algum outro item? Quais equipamentos/ferramentas/utensílios você sugere para o espaço?</li>
             <p align="left"><i>O Movimento Negro de São João del Rei fica comprometido de conseguir aos poucos materiais para o espaço.</i></p>
-            <form>
-                <label for="email"></label><br>
-                <input type="text" required><br>
-            </form>
+
+            <input type="text" required>
             <br/>
-            <form action="https://formspree.io/f/xnqybgjy" method="post">
+            <form action="formu.php" method="post">
                 <button type="submit">Enviar</button>
             </form>
         </ol>
+    </form>
     </form>
     </fieldset>
     <br/>
@@ -239,6 +248,11 @@
             <li>Envio de documentos:</li>
             <input type="hidden" name="doc" value="4194304" />
             <input type="file"/>
+            <br/>
+            <form action="formu.php" method="post">
+                <br/>
+                <button type="submit">Enviar</button>
+            </form>
         </ol>
 
     </fieldset>
