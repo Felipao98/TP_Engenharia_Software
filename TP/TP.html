@@ -83,72 +83,72 @@
             <p align="left">Ex: Roda de Oralidade (MNSJ)</p>
             <form>
                 <label for="pname"></label><br/>
-                <input type="text" required><br/>
+                <input type="text" id="pname" required><br/>
             </form>
             <br/>
             <li>Nome d(o)(a)(e) responsável:</li>
             <form>
                 <label for="rname"></label><br>
-                <input type="text" required><br>
+                <input type="text" id="rname" required><br>
             </form>
             <br/>
             <li>Email de contato:</li>
             <form>
                 <label for="email"></label><br>
-                <input type="text" required><br>
+                <input type="text" id="email" required><br>
             </form>
             <br/>
             <li>Telefone de serviço:</li>
             <form>
                 <label for="telefone"></label><br>
-                <input type="number" class="input-padrao" required placeholder="(xx) xxxxx-xxxx"><br>
+                <input type="number" id="number" class="input-padrao" required placeholder="(xx) xxxxx-xxxx"><br>
             </form>
             <br/>
             <li>Faça uma pequena apresentação sobre o projeto:</li>
-            <textarea cols="60" rows="20"></textarea>
+            <textarea cols="60" rows="20" id="apresentacao" required></textarea>
             <br/>
             <li>Seu projeto é:</li>
             <p>
-                Independente: <input type="checkbox" /><br />
-                De extensão: <input type="checkbox" /><br />
-                Voluntário: <input type="checkbox" /><br />
-                Financiado: <input type="checkbox" />
+                Independente: <input type="checkbox" id="projeto" /><br />
+                De extensão: <input type="checkbox" id="projeto"/><br />
+                Voluntário: <input type="checkbox" id="projeto"/><br />
+                Financiado: <input type="checkbox" id="projeto"/>
             </p>
             <br/>
             <li>Quantas pessoas fazem parte do seu projeto?</li>
             <p>
-                1: <input type="checkbox" /><br />
-                2: <input type="checkbox" /><br />
-                3: <input type="checkbox" /><br />
-                4 ou mais: <input type="checkbox" />
+                1: <input type="checkbox" id="pessoas" /><br />
+                2: <input type="checkbox" id="pessoas"/><br />
+                3: <input type="checkbox" id="pessoas"/><br />
+                4 ou mais: <input type="checkbox" id="pessoas"/>
             </p>
             <br/>
             <li>A constância da proposta de atuação é:</li>
             <p>
-                Duas vezes na semana: <input type="checkbox" /><br />
-                Uma vez na semana: <input type="checkbox" /><br />
-                De 15 em 15 dias: <input type="checkbox" /><br />
-                Uma vez por mês: <input type="checkbox" />
+                Duas vezes na semana: <input type="checkbox" id="atuacao"/><br />
+                Uma vez na semana: <input type="checkbox" id="atuacao"/><br />
+                De 15 em 15 dias: <input type="checkbox" id="atuacao"/><br />
+                Uma vez por mês: <input type="checkbox" id="atuacao"/>
                 <br/>
-                Pontual (uma atividade - não exclui a possibilidade de cadastrar em outra oportunidade): <input type="checkbox" />
+                Pontual (uma atividade - não exclui a possibilidade de cadastrar em outra oportunidade): <input type="checkbox" id="atuacao"/>
                 <br/>
-                Outra (Digite abaixo qual o tipo de constância): <input type="checkbox" />
+                Outra (Digite abaixo qual o tipo de constância): <input type="checkbox" id="atuacao"/>
                 <br/>
-                <textarea cols="70" rows="10"></textarea>
+                <textarea cols="70" rows="10" id="atuacao" required></textarea>
             </p>
             <br/>
             <li>O público alvo do projeto é:</li>
             <p>
-            Crianças: <input type="checkbox" /><br />
-            Adolescentes: <input type="checkbox" /><br />
-            Mulheres: <input type="checkbox" /><br />
-            Terceira idade: <input type="checkbox" />
+            Crianças: <input type="checkbox" id="publico"/><br />
+            Adolescentes: <input type="checkbox" id="publico"/><br />
+            Mulheres: <input type="checkbox" id="publico"/><br />
+            Terceira idade: <input type="checkbox" id="publico"/>
                 <br/>
-            Todos: <input type="checkbox" />
+            Todos: <input type="checkbox" id="publico"/>
                 <br/>
-            Outra (Digite abaixo qual o tipo de público): <input type="checkbox" />
+            Outra (Digite abaixo qual o tipo de público): <input type="checkbox" id="publico"/>
             <br/>
-            <textarea cols="70" rows="10"></textarea>
+            <textarea cols="70" rows="10" id="publico" required></textarea>
         </p>
             <br/>
             <li>Qual(ais) dia(s) e horário você tem disponível para realizar sua atividade. E qual é o tempo estimado de duração? - Se possível, coloque duas possiblidades de horário (em ordem de prioridade).</li>
@@ -158,16 +158,13 @@
                 <li>O primeiro e terceiro domingo do mês às 14h (com 2h de duração)</li>
                 <li>20/03/2023 (segunda-feira) às 20h (com 1h30m de duração)</li>
             </ol>
-            <form>
-                <label for="email"></label><br>
-                <textarea cols="70" rows="10" required></textarea>
+                <textarea cols="70" rows="10" id="horário" required></textarea>
                 <br>
-            </form>
             <br/>
             <li>Seu projeto consegue providenciar seus próprios materiais (além dos já dispostos acima), ou precisa de algum outro item? Quais equipamentos/ferramentas/utensílios você sugere para o espaço?</li>
             <p align="left"><i>O Movimento Negro de São João del Rei fica comprometido de conseguir aos poucos materiais para o espaço.</i></p>
 
-            <input type="text" required>
+            <input type="text" id="material" required>
             <br/>
             <form action="formu.php" method="post">
                 <button type="submit">Enviar</button>
