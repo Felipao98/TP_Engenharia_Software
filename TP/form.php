@@ -5,7 +5,7 @@
     $pnome = $_POST["pname"];
     $rnome = $_POST["rname"];
     $email = $_POST["email"];
-    $telefone = $_POST["number"];
+    $telefone = $_POST["telefone"];
     $apresentacao = $_POST["apresentacao"];
     $projeto = $_POST["projeto"];
     $pessoas = $_POST["pessoas"];

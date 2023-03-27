@@ -95,7 +95,7 @@
             <li>Email de contato:</li>
             <form>
                 <label for="email"></label><br>
-                <input type="text" id="email" required><br>
+                <input type="email" id="email" required><br>
             </form>
             <br/>
             <li>Telefone de serviço:</li>
@@ -166,8 +166,33 @@
 
             <input type="text" id="material" required>
             <br/>
-            <form action="formu.php" method="post">
+            <form action="acog24@gmail.com" method="post" onsubmit="return validarFormulario()">
                 <button type="submit">Enviar</button>
+                
+                
+                <script>
+                    function validarFormulario(){
+                        var pnome = document.getElementById("pnome").value;
+                        var rnome = document.getElementById("rnome").value;
+                        var email = document.getElementById("email").value;
+                        var telefone = document.getElementById("telefone").value;
+                        var apresentacao = document.getElementById("apresentacao").value;
+                        var projeto = document.getElementById("projeto").value;
+                        var pessoas = document.getElementById("pessoas").value;
+                        var atuacao = document.getElementById("atuacao").value;
+                        var publico = document.getElementById("publico").value;
+                        var horario = document.getElementById("horario").value;
+                        var material = document.getElementById("material").value;
+
+                        if (pnome == "" || rnome == "" || email == "" || telefone == "" || apresentacao == "" || projeto == "" || pessoas == "" || atuacao == "" || publico == "" || horario == "" || material == ""){
+                            alert("Por favor, preencha todo o formulário.")
+                            return false
+                        }
+                        return true;
+                    }
+                </script>
+            
+        
             </form>
         </ol>
     </form>
